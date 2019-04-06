@@ -1,55 +1,42 @@
 import React from 'react';
 import './loginpage.css';
 
-
-// class LoginForm extends React.Component {
-  
-//     // Using a class based component here because we're accessing DOM refs
-   
-//     // handleSignIn(e) {
-//     //   e.preventDefault()
-//     //   let username = this.refs.username.value
-//     //   let password = this.refs.password.value
-//     //   this.props.onSignIn(username, password)
-//     // }
-    
-//     render() {
-//       return (
-//         <form onSubmit={this.handleSignIn.bind(this)}>
-//           <h3>Sign in</h3>
-//           <input type="text" ref="username" placeholder="enter you username" />
-//           <input type="password" ref="password" placeholder="enter password" />
-//           <input type="submit" value="Login" />
-//         </form>
-//       )
-//     }
-
-//     // render() {
-//     //     return (
-//     //       <div className="test">
-//     //         <header className="test-header">
-//     //         <a  href="https://reactjs.org">Config Transit Bundles</a>
-//     //         </header>
-//     //       </div>
-//     //     );
-//     //   }
-  
-//   }
-
-//   export default LoginForm;
-
-
 const Welcome = ({user, onSignOut})=> {
     // This is a dumb "stateless" component
     return (
-      <div>
-      <div className="test-corner">
-        Welcome <strong>{user.username}</strong>!<a href="javascript:;" onClick={onSignOut}>Sign out</a>
+      // <div>
+      // <div className="test-corner">
+      //   Welcome <strong>{user.username}</strong>!<a href="javascript:;" onClick={onSignOut}>Sign out</a>
+      // </div>
+      //   <div class="test-header">
+      //   Welcome <strong>m2go-mifarehcedemoportal</strong>
+      // </div>
+      // </div>
+
+      <div class="table">
+      <div class="row">
+          <div class="cell">
+              <p>Side Navigation</p>
+              <div id="page-content-wrapper" class="align-main-content">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-lg-12 dashboard-container style-3 remove-right-left-padding">
+                            <div class="panel">
+                                <div className="test-corner">
+                                  Welcome <strong>{user.username}</strong>!<a href="javascript:;" onClick={onSignOut}>Sign out</a>
+                                </div>
+                                <div class="test-header">
+                                  Welcome <strong>m2go-mifarehcedemoportal</strong>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div> 
+              </div>
+          </div>
       </div>
-        <div class="test-header">
-        Welcome <strong>m2go-mifarehcedemoportal</strong>
-      </div>
-      </div>
+    </div>
+
     )
   }
   
@@ -66,13 +53,44 @@ const Welcome = ({user, onSignOut})=> {
     
     render() {
       return (
-        <div className="test">
-        <form onSubmit={this.handleSignIn.bind(this)}>
-          <h3>Sign in</h3>
-          <input type="text" ref="username" placeholder="enter you username" />
-          <input type="password" ref="password" placeholder="enter password" />
-          <input type="submit" value="Login" />
-        </form>
+        // <div className="test">
+        // <form onSubmit={this.handleSignIn.bind(this)}>
+        //   <h3>Sign in</h3>
+        //   <input type="text" ref="username" placeholder="enter you username" />
+        //   <input type="password" ref="password" placeholder="enter password" />
+        //   <input type="submit" class="btn-primary" value="Login" />
+        // </form>
+        // </div>
+        <div class="table">
+          <div class="row">
+              <div class="cell">
+                  <p>Side Navigation</p>
+                  <div id="page-content-wrapper" class="align-main-content">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-lg-12 dashboard-container style-3 remove-right-left-padding">
+                                <div class="panel">
+                                  <form onSubmit={this.handleSignIn.bind(this)}>
+                                    <h3>Sign in</h3>
+                                    <div class="form-group">
+                                      <input type="text" class="form-control login-input-element-width" ref="username" placeholder="enter you username" />
+                                    </div>
+                                    <br/>
+                                    <div class="form-group">
+                                      <input type="password" class="form-control login-input-element-width" ref="password" placeholder="enter password" />
+                                    </div>
+                                    <br/>
+                                    <div class="form-group">
+                                      <input type="submit" class="btn-primary" value="Login" />
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                          </div>
+                      </div> 
+                  </div>
+              </div>
+          </div>
         </div>
       )
     }
@@ -133,7 +151,4 @@ const Welcome = ({user, onSignOut})=> {
   }
 
   export default App;
-  
-//   ReactDOM.render(<App/>, document.getElementById("app"))
-  
   

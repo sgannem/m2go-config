@@ -1,3 +1,108 @@
+body {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-y: hidden;
+}
+
+html, body, .container-table {
+    height: 100%;
+}
+
+.btn-primary {
+	font-weight: bold;
+	border-color: rgba(111, 168, 220, 1);
+	background-color: rgba(111, 168, 220, 1);
+}
+
+.btn-primary:disabled {
+	font-weight: bold;
+	border-color: rgba(221, 221, 221, 1);
+	background-color: rgba(221, 221, 221, 1);
+
+}
+
+div.row {
+	display: table-row;
+}
+
+div.cell {
+	display: table-cell;
+}
+
+#page-content-wrapper {
+  width: 82.5%;
+  position: absolute;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+#page-content-wrapper {
+  position: relative;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: relative;
+  margin-right: 0;
+}
+
+.align-main-content {
+  margin-left: 100px;
+}
+
+div.dashboard-container {
+	min-width: 89vw;
+	height: 100vh;
+	overflow-y: hidden;
+	overflow-x: auto;
+	padding-bottom: 2vh;
+}
+
+/** Scrollbar Starts **/
+.style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  /* box-shadow: none; */
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+
+.style-3::-webkit-scrollbar
+{
+	/*width: 6px;
+	background-color: #F5F5F5;*/
+}
+
+.style-3::-webkit-scrollbar-thumb
+{
+	/*background-color: #000000;*/
+}
+
+/** Scrollbar Ends **/
+
+div.remove-right-left-padding {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/* .input-text-alignment {
+  margin-left: -7px;
+  width: 8vw;
+} */
+
+.login-input-element-width {
+
+  height: 29%;
+  width: 410px;
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 0.875em;
+  border-radius: 1px;
+}
+
+
 .test {
     text-align: center;
   }
