@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import logo from './desfire.png';
 import './App.css';
 
@@ -8,20 +7,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>./src/components/home/App.js</code> and save to reload.
-          </p>
-          <a
+        <a
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Config Transit Bundles
           </a>
-          <hr/>
-          <p>thank you. please do visit again. prabha </p>
         </header>
       </div>
     );

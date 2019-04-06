@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/home/App';
+// import App from './components/home/App';
+// import LoginForm from './components/login/loginpage';
+import App from './components/login/loginpage';
 import * as serviceWorker from './serviceWorker';
+
+// ReactDOM.render(<LoginForm />, document.getElementById('root'));
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

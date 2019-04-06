@@ -1,0 +1,23 @@
+.test {
+    text-align: center;
+  }
+
+  .test-header {
+    background-color:gray;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  
+  .test-corner {
+    background-color:red;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    color: white;
+  }
